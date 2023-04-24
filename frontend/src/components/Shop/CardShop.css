@@ -1,0 +1,134 @@
+.cardCore {
+  animation: pulsate 1.5s infinite alternate;
+  border: 1px solid #fff;
+  border-radius: 2em;
+  padding: 0.4em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe, 0 0 0.5rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+  width: 300px;
+  min-height: 450px;
+  height: 450px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  background-color: black;
+}
+
+.cardCoreLike {
+  animation: pulsateLike 1.5s infinite alternate;
+  border: 1px solid #fff;
+  border-radius: 2em;
+  padding: 0.4em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #00ffff,
+    0 0 0.8rem #00ffff, 0 0 0.5rem #00ffff, inset 0 0 1.3rem #00ffff;
+  width: 300px;
+  min-height: 450px;
+  height: 450px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  background-color: black;
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.cardCore:hover .flip-card {
+  transform: rotateY(180deg);
+}
+
+.cardCoreLike:hover .flip-card {
+  transform: rotateY(180deg);
+}
+
+.frontCard,
+.backCard {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 15px;
+}
+
+.frontCard img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.backCard {
+  color: white;
+  transform: rotateY(180deg);
+  background-color: black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+@keyframes pulsateLike {
+  100% {
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 10px #00ffff,
+      0 0 20px #00ffff, 0 0 22px #00ffff, 0 0 25px #00ffff, 0 0 37px #00ffff;
+  }
+
+  0% {
+    box-shadow: 0 0 0.5px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #00ffff,
+      0 0 12px #00ffff, 0 0 14px #00ffff, 0 0 17px #00ffff, 0 0 20px #00ffff;
+  }
+}
+
+.cardHeader {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.cardbody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.cardbody p span {
+  color: rgb(0, 195, 195);
+}
+
+.cardfooter {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.cardfooter button {
+  width: 150px;
+  height: 36px;
+  background-image: linear-gradient(
+    to right,
+    rgb(234, 14, 234) 0%,
+    rgb(144, 35, 203) 50%,
+    rgb(10, 109, 175) 100%
+  );
+  border-radius: 10px;
+  color: white;
+  transition: transform 0.4s;
+}
+
+.cardfooter button:hover {
+  transform: scale(1.2);
+}

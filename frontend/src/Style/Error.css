@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+.Page404 {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 100px);
+  width: 100%;
+  background-image: url("/src/assets/testBG13.jpg");
+}
+
+.Page404 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(60vh - 90px);
+  width: 100%;
+}
+
+.Page404 h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 40px;
+  color: rgb(163, 64, 224);
+}
+
+@media screen and (min-width: 769px) {
+  .Page404 h1 {
+    font-size: 60px;
+  }
+
+  .Page404 img {
+    aspect-ratio: 9 / 16;
+    height: 100%;
+  }
+} ;

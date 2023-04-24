@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Mono:wght@700&display=swap");
+
+.galaxyHome {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url("/src/assets/BGHome.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  padding-top: 4em;
+}
+
+.titleTop1 {
+  display: flex;
+  flex-direction: column;
+  height: 10em;
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+  width: 50ch;
+}
+
+.titleTop1 h2 {
+  font-family: "Permanent Marker", cursive;
+}
+.galaxyHome .titleTop1 h2 {
+  color: white;
+  font-size: 3em;
+}
+
+.galaxyHome .titleTop1 h3 {
+  color: white;
+  padding-top: 1em;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 1em;
+}
+
+.global {
+  background-image: url("/src/assets/testBG13.jpg");
+  height: 100vh;
+  overflow-y: scroll;
+  background-size: cover;
+}
+
+@media screen and (min-width: 769px) {
+  .galaxyHome {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    padding-top: 5em;
+  }
+
+  .titleTop1 {
+    align-items: center;
+    justify-content: center;
+    height: 20em;
+    font-family: "Permanent Marker", cursive;
+  }
+}

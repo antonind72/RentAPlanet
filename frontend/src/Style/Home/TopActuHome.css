@@ -1,0 +1,29 @@
+.top1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35%;
+  width: 70%;
+  box-sizing: border-box;
+  padding-top: 15px;
+}
+
+.top1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 10px 10px 10px rgba(0, 221, 255, 0.2);
+  border-image: url("/src/assets/NewBorder.png");
+  border-image-slice: 30%;
+  border-image-width: 60px;
+  border-image-repeat: round;
+  border-image-outset: 8px 8px;
+}
+
+@media screen and (min-width: 769px) {
+  .top1 {
+    padding-right: 2em;
+    width: 60%;
+    height: 60%;
+  }
+}

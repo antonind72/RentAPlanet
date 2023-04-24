@@ -1,0 +1,56 @@
+.navBar {
+  position: relative;
+}
+
+.navBar button {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.burger {
+  width: 11em;
+}
+
+.menuNav li a svg {
+  height: 2em;
+  width: 2em;
+}
+
+.menuNav {
+  list-style: none;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  top: 96%;
+  width: 99.1vw;
+  height: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 1s;
+  justify-content: space-evenly;
+  border-radius: 50%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.menuNav.showMenu {
+  height: 8vh;
+  transition: all 0.75s;
+  z-index: 99999999999999;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #3fffd2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.logoBurger button img {
+  object-fit: cover;
+  width: 11em;
+}
